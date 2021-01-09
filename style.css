@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+/* class chung*/
+.clear{ 
+    clear: both;
+}
+.text-white{
+    color: #fff !important ;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+.row::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-ba{
+    width: 33.333%;
+}
+.col-hai{
+    width: 50%
+    ;
+}
+.col-full{
+    width: 100%;
+}
+.text-center{
+    text-align: center!important;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top:16px !important;
+}
+
+
+
+
+/*main*/
+#head{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top:0;
+    left:0 ;
+    right: 0;
+    z-index: 1;
+
+}
+#nav {
+    display:inline-block;
+}
+#nav,.subnav{
+    list-style-type: none;
+} 
+#nav> li{
+    display:inline-block;
+
+}
+#nav li{
+    position: relative;
+}
+#nav> li> a{color:#fff;
+    text-transform: uppercase;}
+#nav li a{
+    
+    text-decoration: none;
+    line-height:46px ;
+    padding: 0 24px 0;
+    display:inline-block;
+    
+}
+#nav li:hover .subnav{
+    display: block;
+}
+
+
+
+#nav> li:hover> a,
+#nav .subnav li:hover a{
+    color: #000;
+    background-color:#ccc
+     ;
+}
+
+#nav .subnav {
+    display: none;
+   min-width: 160px ;
+    position:absolute;
+    top:100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow:0 0 10px rgba(0,0,0,0.3) ;
+}
+#nav .subnav a{
+    color:#000;
+    padding: 0 16px ;
+    line-height: 38px ;
+}
+#nav .fas{
+    font-size: 20px;
+}
+#nav .subnav li:hover {color: #000;
+    background-color:#ccc
+     ;
+
+}
+#head .search:hover{
+    background-color: #f44336
+
+}
+#head .search{
+    float:right;
+    padding: 0 21px ;
+    cursor:pointer;
+}
+
+#head .fa{
+    color:#fff;
+    font-size: 20px;
+    line-height: 46px;
+
+}
+
+#slider{
+    position: relative;
+    margin-top:46px ;
+    padding-top: 50%;
+    background: url('https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/134956018_3776176685845299_6229234639807850178_o.jpg?_nc_cat=106&ccb=2&_nc_sid=730e14&_nc_ohc=_73MMX_uw8sAX_s_uou&_nc_ht=scontent-nrt1-1.xx&oh=0c46a7f3d78e4f09dbf93ca2d44f929c&oe=601F4234') top center / cover no-repeat;
+    z-index: 100px;
+
+
+}
+#slider .text-content{
+ position: absolute;
+ color: #fff;
+ bottom: 45px;
+ width: 100%;
+ text-align: center;
+ 
+}
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+
+}
+#slider .text-vi{
+    font-size: 15px;
+
+}
+
+
+
+#content .content-section{
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#content .section-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 4px;
+
+}
+#content .section-sub{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+    font-style: italic;
+    opacity: 0.6;
+
+}
+#content .van{
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.66;
+
+
+}
+#content .member-list{
+    margin-top: 48px;
+
+}
+
+#content .tên {
+    font-size: 15px;
+    text-align: center
+    ;}
+#content .member-img{
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+/*css tuar*/
+.tour-sections{
+    background-color: black;
+    padding-bottom: 16px;
+}
+.tickets {
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+}
+.tickets li{
+    color: #757575 ;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.tickets .sold-out{
+    background-color: #f44336;
+    color:#fff;
+    padding: 3px 4px ;
+    margin-left: 16px ;
+
+}
+.tickets .so-luong{
+    float:right;
+    width: 24px;
+    height:24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+
+
+}
+/* palace*/
+.places-list{
+    margin-top: 32px;
+    padding-bottom: 48px;
+}
+
+.palace-img:hover{
+    opacity: 0.6;
+}
+.palace-img{
+    width: 100%;
+    display:block;
+
+}
+.palace-body{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+.palace-heading{
+    font-size: 15px;
+    font-weight: 500
+;
+}
+.palace-time{
+    margin-top: 15px;
+    color: #777777;
+}
+.palace-dsc{
+    margin-top: 15px;
+    line-height: 1.4
+    ;
+}
+.palace-buy-btn:hover{
+    color: black;
+    background-color: #ccc;
+}
+.palace-buy-btn{
+    color: #fff;
+    background-color:#000;
+    text-decoration: none;
+    padding: 11px 16px ;
+    display: inline-block;
+    margin-top: 15px
+;/*contac*/
+}
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info {
+    font-size:18px;
+    line-height: 1.4
+    ;
+}
+.contact-info i{
+    width: 30px;
+    display: inline-block;
+    }
+.contact-v{
+    font-size: 15px;
+}
+.contact-v .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+
+}
+.contact-v .form-submit-btn{
+
+    background-color: black;
+    color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 16px ;
+    float:right;
+    outline: none;
+    cursor: pointer;
+
+}
+.contact-v .form-submit-btn:hover{
+    color:#000;
+    background-color: #ccc;
+}
+.map-section img {
+    width: 100%;
+
+}
+#fooder{line-height: 40px;
+    padding: 64px 16px ;
+    text-align: center;
+
+
+}
+.socials a{
+    font-size: 50px;
+    color: rgba(0,0,0,0.6);
+
+}
+.socials a:hover{
+    background-color:#ccc;
+    color: #000;
+   
+}
+.copyright{
+    font-size: 16px;
+}
